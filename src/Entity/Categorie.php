@@ -24,7 +24,7 @@ class Categorie
     private $nom;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\Produit", mappedBy="Categorie")
+     * @ORM\OneToMany(targetEntity="App\Entity\Produit", mappedBy="categorie")
      */
     private $produits;
 

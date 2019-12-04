@@ -28,9 +28,9 @@ class Produit
 
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Categorie", inversedBy="produits")
-     * @ORM\JoinColumn(nullable=true)
+     * @ORM\JoinColumn(nullable=false)
      */
-    private $Categorie;
+    private $categorie;
 
     public function getId(): ?int
     {
@@ -63,12 +63,12 @@ class Produit
 
     public function getCategorie(): ?Categorie
     {
-        return $this->Categorie;
+        return $this->categorie;
     }
 
-    public function setCategorie(?Categorie $Categorie): self
+    public function setCategorie(?Categorie $categorie): self
     {
-        $this->Categorie = $Categorie;
+        $this->categorie = $categorie;
 
         return $this;
     }
