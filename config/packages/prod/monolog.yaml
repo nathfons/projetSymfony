@@ -17,7 +17,7 @@ monolog:
             type: stream
             #path: "%kernel.logs_dir%/%kernel.environment%.deprecations.log"
             path: "php://stderr"
-            deprecation_filter:
+            #deprecation_filter:
             type: filter
             handler: deprecation
             max_level: info
