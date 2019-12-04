@@ -11,7 +11,6 @@
                 <th>Id</th>
                 <th>Libelle</th>
                 <th>Prix</th>
-                <th>Categorie</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -21,7 +20,6 @@
                 <td>{{ produit.id }}</td>
                 <td>{{ produit.libelle }}</td>
                 <td>{{ produit.prix }}</td>
-                <td>{{ produit.categorie.nom }}</td>
                 <td>
                     <a href="{{ path('produit_show', {'id': produit.id}) }}">show</a>
                     <a href="{{ path('produit_edit', {'id': produit.id}) }}">edit</a>
